@@ -1,3 +1,13 @@
 {
-    "python.pythonPath": ".venv/bin/python3.8"
+    "python.pythonPath": ".venv/bin/python3.8",
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.linting.lintOnSave": true,
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "/home/danny/pythonprojects/recipe-app-api/.venv/bin/black",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "119"
+    ],
+    "editor.formatOnSave": true,
 }
