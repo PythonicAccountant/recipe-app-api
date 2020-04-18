@@ -6,7 +6,7 @@ from django.urls import reverse
 class AdminSiteTests(TestCase):
     def setUp(self):
         self.client = Client()
-        self.admin_user = get_user_model().objects.create_super_user(email="test@example.com", password="password123")
+        self.admin_user = get_user_model().objects.create_superuser(email="test@example.com", password="password123")
         self.client.force_login(self.admin_user)
         self.user = get_user_model().objects.create_user(
             email="test1@example.com", password="password123", name="test full name"

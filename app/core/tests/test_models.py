@@ -32,6 +32,6 @@ class model_tests(TestCase):
         """ Test creating a new superuser """
         email = "test@PYTHONaccounting.com"
         password = "Testpass123"
-        user = get_user_model().objects.create_super_user(email=email, password=password,)
+        user = get_user_model().objects.create_superuser(email=email, password=password,)
         self.assertTrue(user.is_superuser)
         self.assertTrue(user.is_staff)
